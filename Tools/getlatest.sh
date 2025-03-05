@@ -36,7 +36,7 @@ else
   unzip -a -q -d $out/ $filename
   # unzip -a -d $out/ $filename
 
-  mkdir -p /usr/local/bin/rpidisplay
+  mkdir -p /usr/local/bin/ddnsclient
 
   echo "Copying files..."
   cp -a ./$out/ddnsclient/. /usr/local/bin/ddnsclient 

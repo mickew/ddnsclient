@@ -21,6 +21,8 @@ else
     exit
    fi
 
+   sh ./apikey.sh
+
    systemctl enable ddnsclient.service
    systemctl start ddnsclient.service
    whiptail --title "Installation complete" --msgbox "Dynamic DNS Client installation complete." 8 78
