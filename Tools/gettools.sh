@@ -12,8 +12,8 @@ curl -o Tools/getlatest.sh $getlatesturl
 curl -o Tools/install.sh $installurl
 curl -o Tools/uninstall.sh $uninstallurl
 curl -o Tools/update.sh $updateurl
-curl -o Tools/rpidisplay.sh $ddnsclienturl
-curl -o Tools/rpidisplay.service $ddnsclientservice
+curl -o Tools/ddnsclient.sh $ddnsclienturl
+curl -o Tools/ddnsclient.service $ddnsclientservice
 
 cd Tools/
 sudo sh ddnsclient.sh
