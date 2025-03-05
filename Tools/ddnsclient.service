@@ -1,0 +1,13 @@
+[Unit]
+Description=Dynamic DNS Client systemd demon
+
+[Service]
+WorkingDirectory=/usr/local/bin/ddnsclient
+ExecStart=/usr/local/bin/ddnsclient/DdnsClient
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=ddnsclient
+
+[Install]
+WantedBy=multi-user.target
