@@ -38,17 +38,17 @@ public class Program
                 Console.WriteLine(GetVersion());
                 return 0;
             }
-            Log.Information("Starting host");
+            Log.ForContext<Program>().Information("Starting host");
 
             var host = BuildHost(args);
             host.Run();
 
-            Log.Information("Stopping host");
+            Log.ForContext<Program>().Information("Stopping host");
             return 0;
         }
         catch (Exception ex)
         {
-            Log.Fatal(ex, "Host terminated unexpectedly");
+            Log.ForContext<Program>().Fatal(ex, "Host terminated unexpectedly");
             return 1;
         }
         finally
